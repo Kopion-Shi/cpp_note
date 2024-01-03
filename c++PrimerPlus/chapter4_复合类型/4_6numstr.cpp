@@ -1,6 +1,6 @@
 /**
   ******************************************************************************
-  * @file           : 4_5instr3.cpp
+  * @file           : 4_6numstr.cpp
   * @author         : Carl
   * @brief          : None
   * @attention      : None
@@ -11,14 +11,14 @@
 
 int main() {
     using namespace std;
-    const int ArSize = 20;
-    char name[ArSize];
-    char dessert[ArSize];
-    cout << "Enter your name: \n";
-    cin.get(name,ArSize).get();
-    cout << "Enter your favorite dessert: \n";
-    cin.get(dessert,ArSize).get();
-    cout << "I have some delicious " << dessert << " for you ," << name << ".\n";
+    cout << "What year was your house built?\n";
+    int year;
+    cin >> year;
+    cin.get();
+    cout << "what is its street address?\n";
+    char address[80];
+    cin.getline(address, 80);
+    cout << "Year built: " << year << endl << "Address: " << address << endl << "Done !" << endl;
     return 0;
 
 }
